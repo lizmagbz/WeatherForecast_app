@@ -73,7 +73,7 @@ struct WeatherData: Codable {
     
     struct Minutely: Codable {
         let dt: Date?
-        let precipitation: Int?
+        let precipitation: Double?
     }
     
     struct Hourly: Codable {
@@ -155,7 +155,7 @@ struct WeatherData: Codable {
         let clouds: Int?
         let pop: Double?
         let uvi: Double?
-        let rain: Double??
+        let rain: Double?
         
         private enum CodingKeys: String, CodingKey {
             case dt
